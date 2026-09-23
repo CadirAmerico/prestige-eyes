@@ -171,24 +171,3 @@ export const detailedServices = [
     ],
   },
 ] as const;
-
-export const testimonials = [
-  {
-    name: "Miguel Santos",
-    role: "Aluguer de fim de semana",
-    quote:
-      "Processo rápido e sem burocracias. O carro estava impecável e o preço foi o melhor da zona.",
-  },
-  {
-    name: "Ana Ferreira",
-    role: "Lavagem completa",
-    quote:
-      "Saíram-me do carro até as manchas que já não saíam em lado nenhum. Resultado fantástico.",
-  },
-  {
-    name: "Rui Costa",
-    role: "Aluguer mensal",
-    quote:
-      "Precisava de um carro por um mês e deram-me uma condição excelente. Atendimento de 5 estrelas.",
-  },
-] as const;

@@ -32,9 +32,6 @@ export default function Footer() {
           <Link href="#frota" className="transition hover:text-white">
             Frota
           </Link>
-          <Link href="#depoimentos" className="transition hover:text-white">
-            Depoimentos
-          </Link>
           <Link href="#contactos" className="transition hover:text-white">
             Contactos
           </Link>
