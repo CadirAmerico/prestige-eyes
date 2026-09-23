@@ -1,7 +1,7 @@
 export const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const site = {
-  name: "Prestige Detail",
+  name: "Prestige Eyes",
   city: "Coimbra",
   description:
     "Aluguer de carros e lavagem de viaturas em Coimbra. Frota moderna, preços acessíveis e atendimento de qualidade.",
