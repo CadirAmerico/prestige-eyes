@@ -1,7 +1,9 @@
 import Image from "next/image";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Smartphone } from "lucide-react";
 import { whatsappLink, site } from "@/lib/site";
 import { WhatsAppIcon } from "@/components/icons";
+import InstallButton from "@/components/InstallButton";
+import IosInstallButton from "@/components/IosInstallButton";
 
 const heroImage =
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/2024_Renault_Captur_II_Automesse_Ludwigsburg_2024_IMG_1506.jpg/1920px-2024_Renault_Captur_II_Automesse_Ludwigsburg_2024_IMG_1506.jpg";
@@ -92,6 +94,14 @@ export default function Hero() {
               <WhatsAppIcon className="size-4" />
               Pedir orçamento
             </a>
+          </div>
+
+          <div className="mt-4 flex flex-wrap items-center gap-3">
+            <InstallButton className="inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-bold text-white ring-1 ring-white/25 backdrop-blur transition enabled:hover:bg-white/20 disabled:cursor-not-allowed disabled:opacity-50">
+              <Smartphone className="size-4" />
+              App Android
+            </InstallButton>
+            <IosInstallButton className="inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-bold text-white ring-1 ring-white/25 backdrop-blur transition hover:bg-white/20" />
           </div>
         </div>
 
