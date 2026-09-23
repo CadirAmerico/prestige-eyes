@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Car, Check, Sparkles } from "lucide-react";
+import { ArrowRight, Car, Check, Sparkles, Wrench } from "lucide-react";
 import { services, whatsappLink, basePath } from "@/lib/site";
 import { WhatsAppIcon } from "@/components/icons";
 
@@ -9,6 +9,7 @@ const servicesBg = `${basePath}/fortador.webp`;
 const icons = {
   car: Car,
   sparkles: Sparkles,
+  wrench: Wrench,
 } as const;
 
 export default function Services() {
@@ -33,7 +34,7 @@ export default function Services() {
             Serviços
           </p>
           <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-            Dois serviços, uma só qualidade
+            Três serviços, uma só qualidade
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-brand-100/85">
             Tudo o que o seu veículo precisa: aluguer simples e transparente ou
@@ -41,7 +42,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-8 lg:grid-cols-2">
+        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => {
             const Icon = icons[service.icon as keyof typeof icons];
             return (
@@ -85,7 +86,7 @@ export default function Services() {
                     <WhatsAppIcon className="size-4" />
                     Pedir informação
                   </a>
-                  {service.icon === "sparkles" && (
+                  {service.icon !== "car" && (
                     <Link
                       href="/servicos"
                       target="_blank"

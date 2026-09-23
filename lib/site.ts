@@ -97,6 +97,18 @@ export const services = [
       "Enceramento e proteção de pintura",
     ],
   },
+  {
+    title: "Manutenção Mecânica",
+    description:
+      "Oficina completa para manter a sua viatura segura, fiável e pronta para a estrada.",
+    icon: "wrench",
+    items: [
+      "Revisão geral e manutenção programada",
+      "Mudança de óleo e filtros",
+      "Travões e suspensão",
+      "Diagnóstico eletrónico",
+    ],
+  },
 ] as const;
 
 export const detailedServices = [
@@ -136,7 +148,7 @@ export const detailedServices = [
     ],
   },
   {
-    category: "Mecânica Auto",
+    category: "Manutenção Mecânica",
     items: [
       {
         name: "Diagnóstico eletrónico",
